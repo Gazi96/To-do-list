@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url(img/NewYork.jpeg);
+    background-size: cover;
+}
+
+.container
+{
+    width: 70vh;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+}
+
+.box
+{    
+    text-align: center;
+    background-color: #3d453d;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    opacity: 0.5;
+}
+
+.headline
+{
+    margin: 15px 0px;
+    color: white;
+}
+
+.center
+{
+    width: 244px;
+    margin: auto;
+}
+
+.title
+{
+    padding: 5px;
+    width: 200px;
+    display: block;
+    float: left;
+    margin: auto;
+}
+
+.add
+{
+    float:left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.add__cross
+{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    display: block;
+    width: 10px;
+    outline: 3px solid #119111;
+}
+
+.add__cross:nth-of-type(2)
+{
+    transform: rotate(90deg);
+}
+
+.add:hover .add__cross
+{
+    outline-color: #0c740c;
+    cursor: pointer;
+}
+
+.alert
+{
+    color: red;
+    display: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.list
+{
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    color: white;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.list li
+{
+    position: relative;
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.list li:nth-of-type(2n)
+{
+    
+    background-color: #d0c6c6;
+    
+}
+
+.list li:nth-of-type(2n+1)
+{
+    list-style-type: none;
+    background-color: #8d8d8d;
+}
+
+.list li:hover
+{
+    cursor: pointer;
+}
+
+.checked
+{
+    text-decoration: line-through;
+}
+
+.checked::before
+{
+    content:" ";
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    border-color: black;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    transform: rotate(45deg);    
+    margin: 0px 20px;
+}
+
+.list__item::after:hover
+{
+    background-color: red;
+}
+
+.exit
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 30px;
+    text-align: center;
+    padding: 10px 0px; 
+    font-size: 15px;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+.exit:hover
+{
+    color: black;
+    background-color: #119111;
+}

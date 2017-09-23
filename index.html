@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "container">
+        <div class="box">
+            <h1 class = "headline">To do list</h1>
+            <div class="center">
+                <input class = "title" type="text" placeholder="Title...">
+                <span class = "add">   
+                        <span class = "add__cross"></span>
+                        <span class = "add__cross"></span>
+                </span>
+            </div>
+            <p class = "alert">Treść nie może być pusta</p>
+            <div class="clear"></div>
+        </div>
+       
+        <ul class = "list">
+            <li class = "list__item">Shopping <span class = "exit">x</span></li>
+            <li class = "list__item checked">Clean room <span class = "exit">x</span></li>
+            <li class = "list__item">Workout<span class = "exit">x</span></li>
+        </ul>
+    </div>
+    
+    <script src = "index.js"></script>
+</body>
+</html>
